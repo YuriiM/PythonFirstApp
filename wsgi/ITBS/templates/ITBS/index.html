@@ -1,0 +1,60 @@
+{% extends "ITBS/base.html" %}
+{% block content %}
+    {% load widget_tweaks %}
+    <div class="row" id="mForm">
+        <div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3">
+            <form role="form">
+                <h2>PYTHON TEST</h2>
+                <hr class="colorgraph">
+                <div class="alert alert-danger" role="alert" id="alert_error"></div>
+                <div class="alert alert-success" role="alert" id="alert_success"></div>
+                <div class="row">
+                    <!--First name-->
+                    <div class="col-xs-6 col-sm-6 col-md-6">
+                        <div class="form-group">
+                            {{ form.first_name|add_class:"form-control input-lg"|attr:"placeholder:First Name" }}
+                        </div>
+                    </div>
+                    <!--Last name-->
+                    <div class="col-xs-6 col-sm-6 col-md-6">
+                        <div class="form-group">
+                            {{ form.last_name|add_class:"form-control input-lg"|attr:"placeholder:Last Name" }}
+                        </div>
+                    </div>
+                </div>
+                <!--Personal code-->
+                <div class="form-group">
+                    {{ form.p_code|add_class:"form-control input-lg"|attr:"placeholder:Personal Code" }}
+                </div>
+                <!--Email-->
+                <div class="form-group">
+                    {{ form.email|add_class:"form-control input-lg"|attr:"placeholder:Email Address" }}
+                </div>
+                <!--Address-->
+                <div class="form-group">
+                    {{ form.address|add_class:"form-control input-lg"|attr:"placeholder:Full Address" }}
+                </div>
+                <div class="row">
+                    <!--City-->
+                    <div class="col-xs-6 col-sm-6 col-md-6">
+                        <div class="form-group">
+                            {{ form.city|add_class:"form-control input-lg"|attr:"placeholder:City" }}
+                        </div>
+                    </div>
+                    <!--Country-->
+                    <div class="col-xs-6 col-sm-6 col-md-6">
+                        <div class="form-group">
+                            {{ form.country|add_class:"form-control input-lg"|attr:"placeholder:Country" }}
+                        </div>
+                    </div>
+                </div>
+                <hr class="colorgraph">
+                <div class="row">
+                    <div class="col-xs-6 col-md-6"><button type="button" class="btn btn-success btn_main btn-block btn-lg" onclick="add_client()">ADD NEW CLIENT</button></div>
+                    <div class="col-xs-6 col-md-6"><button type="button" class="btn btn-success btn_main btn-block btn-lg" onclick="select_clients();">VIEW LIST OF CLIENTS</button></div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div id="result"></div>
+{% endblock %}

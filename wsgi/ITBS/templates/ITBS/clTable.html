@@ -1,0 +1,36 @@
+<div class="row">
+    {% if clients_list %}
+        <table class="table table-stripped table-bordered table-hover">
+            <thead>
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Personal code</th>
+                    <th>Email</th>
+                    <th>Address</th>
+                    <th>City</th>
+                    <th>Country</th>
+                    <th>Update client</th>
+                    <th>Delete client</th>
+                </tr>
+            </thead>
+            <tbody>
+            {% for client in clients_list %}
+                <tr>
+                    <td>{{ client.first_name }}</td>
+                    <td>{{ client.last_name }}</td>
+                    <td>{{ client.p_code }}</td>
+                    <td>{{ client.email }}</td>
+                    <td>{{ client.address }}</td>
+                    <td>{{ client.city }}</td>
+                    <td>{{ client.country }}</td>
+                    <td><button type="button" class="btn btn-info" onclick="prepare_update({{ client.id }});">UPDATE</button></td>
+                    <td><button type="button" class="btn btn-danger" onclick="delete_client({{ client.id }});">DELETE</button></td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    {% else %}
+        <h4 id="upper">There are no clients yet.</h4>
+    {% endif %}
+</div>

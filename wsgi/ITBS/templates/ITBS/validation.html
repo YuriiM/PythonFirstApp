@@ -1,0 +1,10 @@
+{% if error %}
+    <span id="upper">Something went wrong.</span>
+{% elif form.errors %}
+    {% for field in form %}
+        {% if field.errors %}
+            <span id="upper">Problem with "{{ field.name }}" - {{ field.errors|striptags }}</span>
+            <br/>
+        {% endif %}
+    {% endfor %}
+{% endif %}

@@ -1,0 +1,54 @@
+{% load widget_tweaks %}
+<div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3">
+    <form role="form">
+        <h2>PYTHON TEST</h2>
+        <hr class="colorgraph">
+        <div class="alert alert-danger" role="alert" id="alert_error"></div>
+        <div class="alert alert-success" role="alert" id="alert_success"></div>
+        <div class="row">
+            <!--First name-->
+            <div class="col-xs-6 col-sm-6 col-md-6">
+                <div class="form-group">
+                    {% render_field form.first_name class+="form-control input-lg" placeholder="First Name" %}
+                </div>
+            </div>
+            <!--Last name-->
+            <div class="col-xs-6 col-sm-6 col-md-6">
+                <div class="form-group">
+                    {% render_field form.last_name class+="form-control input-lg" placeholder="Last Name" %}
+                </div>
+            </div>
+        </div>
+        <!--Personal code-->
+        <div class="form-group">
+            {% render_field form.p_code class+="form-control input-lg" placeholder="Personal Code" %}
+        </div>
+        <!--Email-->
+        <div class="form-group">
+            {% render_field form.email class+="form-control input-lg" placeholder="Email Address" %}
+        </div>
+        <!--Address-->
+        <div class="form-group">
+            {% render_field form.address class+="form-control input-lg" placeholder="Full Address" %}
+        </div>
+        <div class="row">
+            <!--City-->
+            <div class="col-xs-6 col-sm-6 col-md-6">
+                <div class="form-group">
+                    {% render_field form.city class+="form-control input-lg" placeholder="City" %}
+                </div>
+            </div>
+            <!--Country-->
+            <div class="col-xs-6 col-sm-6 col-md-6">
+                <div class="form-group">
+                    {% render_field form.country class+="form-control input-lg" placeholder="Country" %}
+                </div>
+            </div>
+        </div>
+        <hr class="colorgraph">
+        <div class="row">
+            <div class="col-xs-6 col-md-6"><button type="button" class="btn btn-success btn_main btn-block btn-lg" onclick="update_client({{ client_id }})">UPDATE</button></div>
+            <div class="col-xs-6 col-md-6"><button type="button" class="btn btn-success btn_main btn-block btn-lg" onclick="cancel()">CANCEL</button></div>
+        </div>
+    </form>
+</div>
