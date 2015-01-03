@@ -79,12 +79,12 @@ WSGI_APPLICATION = 'openshift.wsgi.application'
 if ON_OPENSHIFT: # production settings
     DATABASES = {
          'default': { # you can change the backend to any django supported
-            'ENGINE':   'django.db.backends.mysql',
+            'ENGINE':   'django.db.backends.postgresql_psycopg2',
             'NAME':     os.environ['OPENSHIFT_APP_NAME'],
-            'USER':     os.environ['OPENSHIFT_MYSQL_DB_USERNAME'],
-            'PASSWORD': os.environ['OPENSHIFT_MYSQL_DB_PASSWORD'],
-            'HOST':     os.environ['OPENSHIFT_MYSQL_DB_HOST'],
-            'PORT':     os.environ['OPENSHIFT_MYSQL_DB_PORT'],
+            'USER':     os.environ['OPENSHIFT_POSTGRESQL_DB_USERNAME'],
+            'PASSWORD': os.environ['OPENSHIFT_POSTGRESQL_DB_PASSWORD'],
+            'HOST':     os.environ['OPENSHIFT_POSTGRESQL_DB_HOST'],
+            'PORT':     os.environ['OPENSHIFT_POSTGRESQL_DB_PORT'],
          }
     }
 else: # dev settings
