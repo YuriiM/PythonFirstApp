@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f543bd94-93ff-413f-9d18-976953047956" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wsgi/ITBS/urls.py" afterPath="$PROJECT_DIR$/wsgi/ITBS/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wsgi/ITBS/views.py" afterPath="$PROJECT_DIR$/wsgi/ITBS/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wsgi/openshift/settings.py" afterPath="$PROJECT_DIR$/wsgi/openshift/settings.py" />
     </list>
     <ignored path="python.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -48,10 +47,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="urls.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wsgi/ITBS/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.10663507" vertical-offset="0" max-vertical-offset="844">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
               <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
               <folding>
                 <element signature="e#0#42#0" expanded="true" />
@@ -60,11 +59,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wsgi/openshift/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="405" max-vertical-offset="1890">
-              <caret line="59" column="20" selection-start-line="59" selection-start-column="20" selection-end-line="59" selection-end-column="20" />
+            <state vertical-scroll-proportion="0.67535543" vertical-offset="990" max-vertical-offset="1890">
+              <caret line="104" column="0" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -81,9 +80,9 @@
         <option value="$PROJECT_DIR$/wsgi/ITBS/models.py" />
         <option value="$PROJECT_DIR$/wsgi/ITBS/forms.py" />
         <option value="$PROJECT_DIR$/wsgi/openshift/urls.py" />
-        <option value="$PROJECT_DIR$/wsgi/openshift/settings.py" />
         <option value="$PROJECT_DIR$/wsgi/ITBS/views.py" />
         <option value="$PROJECT_DIR$/wsgi/ITBS/urls.py" />
+        <option value="$PROJECT_DIR$/wsgi/openshift/settings.py" />
       </list>
     </option>
   </component>
@@ -506,14 +505,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wsgi/openshift/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="405" max-vertical-offset="1890">
-          <caret line="59" column="20" selection-start-line="59" selection-start-column="20" selection-end-line="59" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wsgi/openshift/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="300">
@@ -532,11 +523,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/wsgi/ITBS/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.10663507" vertical-offset="0" max-vertical-offset="844">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
           <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
           <folding>
             <element signature="e#0#42#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wsgi/openshift/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.67535543" vertical-offset="990" max-vertical-offset="1890">
+          <caret line="104" column="0" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
