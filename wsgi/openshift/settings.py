@@ -80,7 +80,7 @@ WSGI_APPLICATION = 'openshift.wsgi.application'
 # https://docs.djangoproject.com/en/1.7/ref/settings/#databases
 if ON_OPENSHIFT: # production settings
     DATABASES = {
-         'default': { # you can change the backend to any django supported
+        'default': { # you can change the backend to any django supported
             'ENGINE':   'django.db.backends.postgresql_psycopg2',
             'NAME':     os.environ['OPENSHIFT_APP_NAME'],
             'USER':     os.environ['OPENSHIFT_POSTGRESQL_DB_USERNAME'],
@@ -90,10 +90,14 @@ if ON_OPENSHIFT: # production settings
          }
     }
 else: # dev settings
-     DATABASES = {
-         'default': {
-             'ENGINE': 'django.db.backends.sqlite3',
-             'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.postgresql_psycopg2',
+            'NAME': 'pTask',
+            'USER': 'postgres',
+            'PASSWORD': '123456',
+            'HOST': '127.0.0.1',
+            'PORT': '5432',
          }
     }
 
