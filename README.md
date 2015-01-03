@@ -1,5 +1,5 @@
 My First Python Application (ITBS)
 ====================================
 
-The openshift skeleton powered by lrivallain.
+The OpenShift skeleton for Django 1.7 and Python 3.x created by lrivallain.
 
