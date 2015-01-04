@@ -98,11 +98,7 @@ else: # dev settings
             'PASSWORD': '123456',
             'HOST': '127.0.0.1',
             'PORT': '5432',
-<<<<<<< HEAD
         }
-=======
-         }
->>>>>>> d8f8a0df450db8a30377e647da052fcbe7df7dc4
     }
 
 
